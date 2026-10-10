@@ -76,7 +76,7 @@ Interface construída com HTML e CSS nativos encapsulados em Quarto/Markdown, en
 fresno-spotify-analysis/
 ├── dados/ # Bases consolidadas em .rds (coletadas em 2022)
 ├── fresnoR.qmd # Código-fonte da apresentação (Quarto + reveal.js)
-├── index.html # Apresentação renderizada
+├── docs/ # Apresentação renderizada
 └── *.Rproj # Projeto do RStudio
 ```
 
