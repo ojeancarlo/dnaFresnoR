@@ -110,7 +110,3 @@ install.packages(c(
 ```
 
 **4. Clique em `Render` no arquivo `fresnoR.qmd`.** O RStudio se encarregará de ler as bases estáticas e gerar o seu `index.html`.
-
----
-
-## Feito por **[Jean Carlo](https://github.com/ojeancarlo)**.
