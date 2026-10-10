@@ -1,0 +1,1631 @@
+---
+title: "O que aconteceu com a banda Fresno?"
+author: "Jean Carlo da Silva"
+lang: pt-BR
+output-file: index.html
+
+format:
+  revealjs:
+    footer: "Análise da discografia da banda Fresno"
+    theme: dark
+    preview-links: true
+    chalkboard: true
+    slide-number: c
+    show-slide-number: all
+    smaller: true
+    incremental: true
+    transition: slide
+    background-transition: fade
+    auto-animate: true
+
+knitr:
+  opts_chunk:
+    fig.align: "center"
+    echo: false
+
+date: "2022-10-09"
+---
+
+## Trajetória e Evolução
+
+```{=html}
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;800&family=Inter:wght@300;400;600&display=swap');
+
+/* --- Base --- */
+.reveal-viewport, .reveal { 
+  background: radial-gradient(circle at 80% 20%, #072228, #050a10) !important; 
+  font-family: 'Inter', sans-serif !important; 
+  color: #CBD5E1 !important; 
+}
+
+/* --- Cabeçalhos --- */
+.reveal h1, .reveal h2, .reveal h3 { 
+  font-family: 'Urbanist', sans-serif !important; 
+  font-weight: 800 !important; 
+  color: #FFFFFF !important; 
+}
+.reveal h1 { font-size: 2.5em; text-transform: uppercase; letter-spacing: -1px; }
+
+.reveal h2 { 
+  border-left: 6px solid #00D2D2 !important; 
+  padding-left: 20px !important; 
+  text-transform: uppercase; 
+  margin-bottom: 16px !important;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+/* --- Destaque de texto --- */
+.hl { 
+  color: #00D2D2; 
+  font-weight: 600; 
+}
+
+.hl-num {
+  background: linear-gradient(90deg, #00D2D2, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* --- Photo Card --- */
+.photo-card {
+  background: #111827; 
+  border-radius: 16px; 
+  padding: 20px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-card img {
+  border-radius: 8px; 
+  max-width: 100%; 
+  height: auto;
+  display: block; 
+  margin: 0 auto;
+}
+
+/* --- Rodapé e número do slide --- */
+.reveal .footer {
+  position: absolute !important;
+  bottom: 15px !important;
+  left: 40px !important;
+  font-size: 14px !important;
+  color: #475569 !important;
+  z-index: 10;
+}
+.reveal .slide-number {
+  position: absolute !important;
+  bottom: 15px !important;
+  right: 40px !important;
+  background: transparent !important;
+  color: #475569 !important;
+  font-size: 14px !important;
+  z-index: 10;
+}
+.reveal .slide-number::before { content: "Slide "; }
+.reveal::after {
+  content: "";
+  position: absolute;
+  bottom: 45px;
+  left: 40px;
+  right: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+  z-index: 1;
+}
+
+/* --- Grid de Tiles (Dicionário) --- */
+.tiled-content { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
+  width: 100%; 
+  margin-top: 15px; 
+}
+.tile { 
+  background: #0F172A; 
+  border: 1px solid rgba(255, 255, 255, 0.05); 
+  border-radius: 12px; 
+  padding: 20px 24px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: left; 
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  min-height: 160px; 
+}
+.tile:hover {
+  transform: translateY(-5px);
+  border-color: #00D2D2;
+  box-shadow: 0 8px 25px rgba(0, 210, 210, 0.15); 
+}
+.tile .icon { 
+  color: #00D2D2; 
+  margin-bottom: 12px; 
+  display: flex;
+  justify-content: flex-start;
+}
+.tile h3 { 
+  font-size: 26px !important; 
+  font-weight: 800 !important; 
+  font-family: 'Urbanist', sans-serif !important;
+  margin: 0 0 10px 0 !important; 
+  color: #FFFFFF !important; 
+  border-left: none !important; 
+  padding-left: 0 !important; 
+  text-transform: none !important; 
+  letter-spacing: -0.5px !important; 
+  line-height: 1;
+}
+.tile p { 
+  font-size: 18px !important; 
+  line-height: 1.5 !important; 
+  color: #CBD5E1 !important; 
+  margin: 0 !important; 
+}
+
+/* --- Tabelas --- */
+.table-custom { width: 100%; border-collapse: collapse; font-size: 15px; }
+.table-custom th { 
+  background: #1E293B; 
+  color: #FFFFFF; 
+  font-family: 'Urbanist', sans-serif; 
+  font-weight: 800;
+  padding: 10px; 
+  border-bottom: 1px solid #0F172A; 
+  text-align: center;
+}
+.table-custom td { 
+  padding: 8px 10px; 
+  border-bottom: 1px solid #1a2540;   
+  text-align: center; 
+  color: #CBD5E1; 
+  vertical-align: middle; 
+}
+.table-custom tr:hover td {
+  background: rgba(0, 210, 210, 0.05);
+  color: #FFFFFF;
+}
+
+/* --- Números em destaque --- */
+.highlight-numbers { 
+  display: grid; 
+  grid-template-columns: 35% 65%; 
+  gap: 15px; 
+  align-items: center; 
+  background: #0F172A; 
+  padding: 12px 16px; 
+  border-radius: 12px; 
+  border: 1px solid rgba(255,255,255,0.05); 
+  margin-top: 10px; 
+}
+.huge-number { 
+  font-size: 45px; 
+  font-weight: 800; 
+  background: linear-gradient(135deg, #00D2D2, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1; 
+  font-family: 'Urbanist', sans-serif; 
+  text-align: center; 
+}
+.number-caption { 
+  font-size: 11px; 
+  color: #FFFFFF; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  text-align: center; 
+  margin-top: 4px; 
+}
+
+/* --- Lista com bullets customizados --- */
+.styled-bullets { list-style: none !important; padding-left: 0 !important; }
+.styled-bullets li { 
+  margin-bottom: 20px; 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 15px; 
+  font-size: 1.05em !important; 
+  line-height: 1.6; 
+}
+.styled-bullets li::before { 
+  content: "»"; 
+  font-family: 'Urbanist', sans-serif; 
+  font-weight: 900; 
+  color: #00D2D2; 
+  font-size: 28px; 
+  line-height: 1;
+}
+
+/* --- Fluxo histórico de álbuns --- */
+.history-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+.flow-item {
+  flex: 0 0 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.flow-item:hover { transform: translateY(-5px); }
+.album-cover-flow {
+  width: 65px; 
+  height: 65px; 
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 210, 210, 0.3);
+  margin-bottom: 6px;
+}
+.album-year {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 800;
+  color: #00D2D2;
+  font-size: 0.95em; 
+  line-height: 1;
+}
+.album-name-flow {
+  font-size: 0.65em; 
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 2px 0; 
+  line-height: 1.1;
+  max-width: 130px;
+}
+.album-tracks-badge {
+  background: rgba(0, 210, 210, 0.1);
+  color: #00D2D2;
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-size: 0.55em; 
+  font-weight: 800;
+  border: 1px solid rgba(0, 210, 210, 0.2);
+}
+
+/* NOVO: callout de insight nos slides de análise */
+.insight-box {
+  background: linear-gradient(135deg, rgba(0,210,210,0.08), rgba(0,210,210,0.03));
+  border: 1px solid rgba(0, 210, 210, 0.25);
+  border-left: 4px solid #00D2D2;
+  border-radius: 0 12px 12px 0;
+  padding: 10px 16px;
+  margin: 8px 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: #CBD5E1;
+}
+.insight-box strong { color: #00D2D2; }
+
+/* NOVO: grid de eras para o heatmap */
+.era-badge {
+  display: inline-block;
+  background: rgba(0, 210, 210, 0.12);
+  border: 1px solid rgba(0, 210, 210, 0.3);
+  color: #00D2D2;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 0.75em;
+  font-weight: 700;
+  font-family: 'Urbanist', sans-serif;
+  letter-spacing: 0.5px;
+}
+</style>
+```
+
+```{r setup}
+#| include: false
+#| warning: false
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  dev.args = list(bg = "transparent")
+)
+
+# configurações e pacotes -------------------------------------------------
+
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
+library(forcats)
+library(lubridate)
+library(ggrepel)
+library(scales)
+library(kableExtra)
+
+# importando os dados -----------------------------------------------------
+
+## base principal e base das músicas mais populares
+fresno <- readr::read_rds("dados/fresno.rds")
+fresno_toptracks <- readr::read_rds("dados/fresno_toptracks.rds")
+
+# paleta de cores e tema --------------------------------------------------
+
+## paleta central para evitar repetição de cores em todos os gráficos
+COR_DESTAQUE <- "#00D2D2"
+COR_PANEL <- "#0F172A"
+COR_TEXTO <- "#CBD5E1"
+COR_GRID <- "#FFFFFF1A"
+COR_BORDA <- "#FFFFFF22"
+
+## tema do ggplot reutilizável, com opção de grade (x, y, both ou none)
+tema_fresno <- function(grid = "both") {
+
+  ## elementos base do tema (fundo, textos, bordas e legendas)
+  base <- ggplot2::theme(
+    text = ggplot2::element_text(color = COR_TEXTO),
+    axis.text = ggplot2::element_text(color = COR_TEXTO, size = 11),
+    axis.title = ggplot2::element_text(color = "#FFFFFF", size = 13, face = "bold"),
+    axis.ticks = ggplot2::element_line(color = "#FFFFFF20"),
+    plot.title = ggplot2::element_text(color = "#FFFFFF", size = 14, face = "bold", hjust = 0),
+    plot.subtitle = ggplot2::element_text(color = "#94A3B8", size = 11, hjust = 0),
+    plot.background = ggplot2::element_rect(fill = "transparent", color = NA),
+    panel.background = ggplot2::element_rect(fill = COR_PANEL, color = NA),
+    panel.border = ggplot2::element_rect(color = COR_BORDA, fill = NA, linewidth = 0.8),
+    panel.grid.minor = ggplot2::element_blank(),
+    strip.background = ggplot2::element_rect(fill = "#1E293B", color = "transparent"),
+    strip.text = ggplot2::element_text(color = "#FFFFFF", size = 11, face = "bold"),
+    legend.background = ggplot2::element_rect(fill = "transparent", color = NA),
+    legend.text = ggplot2::element_text(color = COR_TEXTO),
+    legend.title = ggplot2::element_text(color = "#FFFFFF"),
+    plot.margin = ggplot2::margin(10, 15, 10, 10)
+  )
+
+  ## camada de grade conforme o argumento escolhido
+  grid_layer <- switch(grid,
+    "x" = ggplot2::theme(
+                panel.grid.major.x = ggplot2::element_line(color = COR_GRID, linetype = "dashed"),
+                panel.grid.major.y = ggplot2::element_blank()),
+    "y" = ggplot2::theme(
+                panel.grid.major.y = ggplot2::element_line(color = COR_GRID, linetype = "dashed"),
+                panel.grid.major.x = ggplot2::element_blank()),
+    "both" = ggplot2::theme(
+                panel.grid.major = ggplot2::element_line(color = COR_GRID, linetype = "dashed")),
+    "none" = ggplot2::theme(
+                panel.grid.major = ggplot2::element_blank())
+  )
+
+  base + grid_layer
+}
+
+# reestruturando a base principal -----------------------------------------
+
+## selecionando e renomeando as variáveis, criando polaridade, ano e era
+fresno_musicas <- fresno |>
+  dplyr::transmute(
+    musica = track_name,
+    numero_musica = track_number,
+    album = album_name,
+    acustica = acousticness,
+    dancabilidade = danceability,
+    energia = energy,
+    instrumentalidade = instrumentalness,
+    ao_vivo = liveness,
+    discurso = speechiness,
+    ritmo = tempo,
+    valencia = valence,
+    polaridade = sqrt(valencia^2 + energia^2),
+    modo = mode,
+    tempo_ritmico = time_signature,
+    duracao = duration_ms,
+    key_name = key_name,
+    mode_name = mode_name,
+    key_mode = key_mode,
+    data_lancamento = album_release_date,
+    id = track_id
+  ) |>
+  dplyr::mutate(
+    data_lancamento = lubridate::as_date(data_lancamento),
+    ano = lubridate::year(data_lancamento),
+    ## classificando cada música em uma era da carreira
+    era = dplyr::case_when(
+      ano <= 2006 ~ "Origem (2003–06)",
+      ano <= 2012 ~ "Consolidação (2008–12)",
+      ano <= 2017 ~ "Renovação (2014–17)",
+      TRUE ~ "Novo Auge (2019–21)"
+    ),
+    ## ordenando as eras cronologicamente
+    era = factor(era, levels = c(
+      "Origem (2003–06)", "Consolidação (2008–12)",
+      "Renovação (2014–17)", "Novo Auge (2019–21)"
+    ))
+  ) |>
+  dplyr::arrange(data_lancamento)
+
+## preparando a base de álbuns com capa e quantidade de músicas
+fresno_albuns <- fresno |>
+  tidyr::unnest(album_images) |>
+  dplyr::filter(width == "300") |>
+  dplyr::group_by(
+    album = album_name,
+    ano_lancamento = album_release_year,
+    capa = url
+  ) |>
+  dplyr::count(name = "musicas") |>
+  dplyr::arrange(ano_lancamento) |>
+  dplyr::relocate(album, ano_lancamento, musicas, capa)
+
+# valores auxiliares ------------------------------------------------------
+
+## calculados uma vez e reutilizados nos slides
+total_musicas <- nrow(fresno_musicas)
+total_albuns <- dplyr::n_distinct(fresno_musicas$album)
+total_minutos <- round(sum(fresno_musicas$duracao) / 60 / 1000, 0)
+media_musicas <- round(mean(fresno_albuns$musicas), 1)
+media_bpm <- round(mean(fresno_musicas$ritmo), 0)
+```
+
+::::: {.columns}
+
+:::: {.column width="55%" style="padding-right: 40px; padding-top: 20px;"}
+::: {style="font-size: 1.05em; text-align: justify; line-height: 1.6;"}
+Nascida no início dos anos 2000 em Porto Alegre, a banda percorreu um caminho do [pop-punk-emo underground]{.hl} até a consolidação no cenário nacional.
+
+Atualmente formada por [Lucas Silveira, Gustavo Mantovani (Vavo) e Thiago Guerra]{.hl}, a banda vive o que críticos e fãs chamam de um "novo auge", equilibrando nostalgia e inovação sonora.
+:::
+::::
+
+:::: {.column width="45%"}
+<div class="photo-card" style="flex-direction: column;">
+  <img src="https://s2.glbimg.com/xC1lgMse_tmd2E7xGtEhlKbH0rg=/0x0:2048x2048/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/0/W/Hsag8oTxyBvLfyZg58rw/fresno2021.jpg" alt="Fresno">
+  <p style="font-size: 0.65em; color: #64748B; margin-top: 8px; text-align: center; margin-bottom: 0;">
+    Foto de divulgação da banda no Spotify em out/2022.
+  </p>
+</div>
+::::
+
+:::::
+
+---
+
+## Mas por que analisar isso?
+
+<style>
+#slide-motivo p { font-size: 24px !important; line-height: 1.5 !important; }
+</style>
+
+::: {#slide-motivo style="text-align: justify; margin-bottom: 18px;"}
+Mesmo após décadas na estrada, a banda surpreende ao se manter em constante evidência. A mídia, os fãs e os próprios integrantes celebram este momento como um [novo auge]{.hl}.
+
+Movido por esse fenômeno (e por ser minha banda favorita 😍), este estudo mergulha na discografia do grupo para mapear a evolução sonora e responder à pergunta central: **afinal, o que aconteceu com a Fresno?**<br>
+:::
+
+<div class="photo-card" style="flex-direction: column; padding: 12px; width: 70%; margin: 0 auto;">
+  <img src="images/02.png" alt="Recortes" style="border-radius: 8px; width: 100%; max-height: 260px; object-fit: cover;">
+  <p style="font-size: 14px !important; color: #64748B; margin-top: 8px; text-align: center; margin-bottom: 0;">
+    Recortes sobre o momento atual da banda Fresno na mídia e redes sociais.
+  </p>
+</div>
+
+---
+
+## Objetivos da Análise
+
+::: {style="font-size: 1.05em; text-align: justify; line-height: 1.6; margin-bottom: 25px;"}
+Buscando entender os momentos de alta e o panorama de novo auge depois de décadas, para responder: **o que aconteceu com a Fresno?**
+
+Assim, utilizando dados do Spotify, extraídos através do pacote `{spotifyr}`, o trabalho buscará responder essa questão, tendo como base alguns objetivos, como:
+:::
+
+<ul class="styled-bullets">
+  <li class="fragment"><div>Entender como a Fresno <span class="hl">estruturou e organizou</span> seus trabalhos;</div></li>
+  <li class="fragment"><div>Avaliar se houve <span class="hl">mudanças na construção</span> das músicas ao longo do tempo;</div></li>
+  <li class="fragment"><div>Identificar possíveis pontos de <span class="hl">preferências do público</span> na obra completa;</div></li>
+  <li class="fragment"><div>Verificar se a <span class="hl">estética da banda</span> foi afetada pelo passar dos anos.</div></li>
+</ul>
+
+---
+
+## Dicionário de Variáveis
+
+::: {style="font-size: 1.05em; text-align: left; margin-bottom: 20px; color: #94A3B8;"}
+Antes de seguir com a análise, cabe detalhar as variáveis extraídas do Spotify:
+:::
+
+:::: {.tiled-content}
+
+::: {.tile}
+::: icon
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/></svg>
+:::
+### Energia
+<p>Indica o grau de intensidade e atividade. Músicas rápidas e pesadas registram maior energia.</p>
+:::
+
+::: {.tile}
+::: icon
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/></svg>
+:::
+### Valência
+<p>Reflete a positividade musical contida na faixa (de "negativas" a "positivas").</p>
+:::
+
+::: {.tile}
+::: icon
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm0-1A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm-3-8a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/></svg>
+:::
+### Polaridade
+<p>Cálculo que combina Valência e Energia para definir o "humor" emocional (Emo).</p>
+:::
+
+::: {.tile}
+::: icon
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="12" cy="9" rx="8" ry="3"></ellipse>
+  <path d="M4 9v6c0 1.66 3.58 3 8 3s8-1.34 8-3V9"></path>
+  <path d="M7 11.5L4 15"></path><path d="M17 11.5L20 15"></path>
+  <path d="M12 12v6"></path><path d="M7 2l3 4"></path>
+  <circle cx="6.5" cy="1.5" r="1" fill="currentColor"></circle>
+  <path d="M17 2l-3 4"></path>
+  <circle cx="17.5" cy="1.5" r="1" fill="currentColor"></circle>
+</svg>
+:::
+### Ritmo (BPM)
+<p>Estimativa geral de batidas por minuto. Define a velocidade da faixa.</p>
+:::
+
+::: {.tile}
+::: icon
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/><path fill-rule="evenodd" d="M9 3v10H8V3h1z"/><path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/></svg>
+:::
+### Dançabilidade
+<p>O quão adequada a música é para dançar, baseado em ritmo e estabilidade.</p>
+:::
+
+::: {.tile}
+::: icon
+<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/></svg>
+:::
+### Duração
+<p>Tempo de duração da faixa. Fator vital na análise de consistência.</p>
+:::
+
+::::
+
+---
+
+## Discografia: Fluxo Histórico
+
+<div style="text-align: center; margin-bottom: 15px;">
+  <div style="font-size: 28px; font-weight: 800; font-family: 'Urbanist', sans-serif; background: linear-gradient(90deg, #00D2D2, #00FFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">`r total_musicas` músicas analisadas</div>
+  <div style="font-size: 18px; color: #94A3B8; margin-top: 5px;">Aproximadamente `r total_minutos` minutos de rock.</div>
+</div>
+
+```{=html}
+<style>
+/* Container principal - Margem aumentada para 40px para dar fôlego ao texto */
+.history-container {
+  width: 100% !important;
+  height: 320px !important; 
+  margin-top: 40px !important; 
+  position: relative !important;
+  overflow: hidden !important; 
+}
+
+/* A "Trilha" do carrossel */
+.history-track {
+  position: absolute !important;
+  left: 0 !important; 
+  top: 0 !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 25px !important;
+  width: max-content !important;
+  transform: translateX(0);
+}
+
+/* Animação 30s */
+.present .history-track {
+  animation: scrollMarquee 30s linear 1.5s infinite !important; 
+}
+
+.history-track:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12.5px)); }
+}
+
+.flow-item {
+  flex: 0 0 170px !important; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Separador Minimalista */
+.separator-item {
+  flex: 0 0 80px !important; 
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+.separator-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, transparent, #94A3B8, transparent);
+}
+.separator-text {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 15px 0;
+  white-space: nowrap;
+}
+
+/* Badge Clean: sem cor de destaque, sem borda e colado na capa */
+.album-tracks-badge { 
+  font-size: 0.65em !important; 
+  font-weight: 400 !important;
+  color: #94A3B8 !important; 
+  text-transform: lowercase;
+  margin-bottom: 2px !important; 
+  background: transparent !important; 
+  border: none !important; 
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Capas Clean */
+.album-cover-flow {
+  width: 120px !important; 
+  height: 120px !important; 
+  border-radius: 8px !important;
+  border: 1px solid rgba(255,255,255,0.1) !important; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin-bottom: 8px !important;
+}
+
+.album-year { 
+  font-size: 0.95em !important; 
+  font-weight: 400 !important;  
+  color: #94A3B8 !important;    
+  margin-bottom: 2px !important; 
+}
+
+.album-name-flow { 
+  font-size: 0.85em !important; 
+  max-width: 150px !important; 
+  line-height: 1.2 !important;
+  text-align: center;
+  color: #CBD5E1 !important;
+  word-wrap: break-word;
+}
+</style>
+```
+
+```{r}
+# preparando os dados -----------------------------------------------------
+
+## filtrando os álbuns a partir de 2003 e ordenando por ano
+albuns_data <- fresno_albuns |>
+  dplyr::ungroup() |>
+  dplyr::filter(ano_lancamento >= 2003) |>
+  dplyr::arrange(ano_lancamento)
+
+# construindo os elementos html -------------------------------------------
+
+## gerando os itens individuais (badge, capa, ano e nome do álbum)
+itens_html <- lapply(seq_len(nrow(albuns_data)), function(i) {
+  htmltools::div(
+    class = "flow-item",
+    htmltools::div(class = "album-tracks-badge", paste0(albuns_data$musicas[i], " faixas")),
+    htmltools::tags$img(
+      class = "album-cover-flow",
+      src = albuns_data$capa[i],
+      alt = albuns_data$album[i]
+    ),
+    htmltools::div(class = "album-year", albuns_data$ano_lancamento[i]),
+    htmltools::div(class = "album-name-flow", albuns_data$album[i])
+  )
+})
+
+## criando o divisor que marca o reinício do loop
+separador_html <- htmltools::div(
+  class = "flow-item separator-item",
+  htmltools::div(class = "separator-line"),
+  htmltools::div(class = "separator-text", "Início de tudo"),
+  htmltools::div(class = "separator-line")
+)
+
+## juntando os itens ao separador
+itens_html_com_separador <- append(itens_html, list(separador_html))
+
+# renderizando o carrossel ------------------------------------------------
+
+## trilha duplicada para criar o efeito de loop infinito
+htmltools::div(
+  class = "history-container",
+  htmltools::div(
+    class = "history-track",
+    itens_html_com_separador,
+    itens_html_com_separador
+  )
+)
+```
+
+---
+
+## Agora sim, ao trabalho {#slide-gif}
+
+<img id="gif-fresno" alt="Fresno"/>
+
+```{=html}
+<style>
+#gif-fresno {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 540px !important;
+  max-height: none !important;
+  margin: 0 auto !important;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: transparent;
+}
+</style>
+
+<script>
+window.addEventListener("load", function () {
+  var GIF_URL = "https://media.tenor.com/JgPSDpxQq2gAAAAC/fresnorock-vavofresno.gif";
+  var img = document.getElementById("gif-fresno");
+
+  function toggleGif(slide) {
+    if (slide && slide.id === "slide-gif") {
+      img.src = GIF_URL + "?t=" + Date.now();
+    } else {
+      img.removeAttribute("src");
+    }
+  }
+
+  Reveal.on("ready", function (e) { toggleGif(e.currentSlide); });
+  Reveal.on("slidechanged", function (e) { toggleGif(e.currentSlide); });
+});
+</script>
+```
+
+---
+
+## O que a discografia nos mostra?
+
+<style>
+#slide-dados p { font-size: 24px !important; }
+</style>
+
+::: {#slide-dados style="text-align: justify; line-height: 1.4; margin-bottom: 5px;"}
+A banda encontrou sua ["fórmula" de volumetria musical]{.hl}. Como o gráfico revela, independentemente da era ou das inovações sonoras, a Fresno molda seus discos mantendo uma [constância temporal na dimensão dos álbuns]{.hl}.<br><br>
+:::
+
+::::: {.columns}
+
+:::: {.column width="28%"}
+
+<div style="background: #0F172A; padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center; margin-top: 0;">
+<div class="huge-number" style="font-size: 40px; line-height: 1;">`r media_musicas`</div>
+<div class="number-caption" style="font-size: 10px; margin-top: 2px; margin-bottom: 6px;">Músicas por Álbum</div>
+<div style="font-size: 0.7em; line-height: 1.3; color: #CBD5E1; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 6px;">
+Arquitetura de álbuns intacta em 20 anos de evolução sonora.
+</div>
+</div>
+
+<div class="insight-box" style="margin-top: 8px; font-size: 0.7em; padding: 8px 10px; line-height: 1.3;">
+**Como ler:** cada ponto = uma música. Eixo horizontal = duração. A caixa agrupa a maioria das faixas.
+</div>
+
+::::
+
+:::: {.column width="2%"}
+
+::::
+
+:::: {.column width="70%"}
+
+```{r out.width='100%', fig.height=3.8, fig.width=7.5, dev='svg'}
+# definindo as cores ------------------------------------------------------
+
+## cor de cada era da carreira
+cores_era <- c(
+  "Origem (2003–06)" = "#DA4220",
+  "Consolidação (2008–12)" = "#B5A88A",
+  "Renovação (2014–17)" = "#2296DB",
+  "Novo Auge (2019–21)" = "#28AFFF"
+)
+
+# preparando os dados e construindo o gráfico -----------------------------
+
+fresno_musicas |>
+  ## convertendo a duração para minutos e criando o rótulo do álbum
+  dplyr::mutate(
+    duracao_num = as.numeric(duracao),
+    duracao_min = duracao_num / 60 / 1000,
+    ano = lubridate::year(as.Date(data_lancamento)),
+    album_label = paste0(album, " (", ano, ")"),
+    album_label = forcats::fct_reorder(album_label, dplyr::desc(data_lancamento))
+  ) |>
+  ggplot2::ggplot(ggplot2::aes(x = duracao_min, y = album_label, color = era, fill = era)) +
+  ## faixa de destaque entre 3 e 4,5 minutos
+  ggplot2::annotate("rect", xmin = 3, xmax = 4.5, ymin = 0, ymax = Inf,
+                    fill = "#FFFFFF", alpha = 0.03, color = NA) +
+  ## boxplot com a distribuição de duração por álbum
+  ggplot2::geom_boxplot(
+    alpha = 0.15,
+    outlier.shape = NA,
+    linewidth = 0.8,
+    show.legend = FALSE
+  ) +
+  ## pontos individuais (uma música por ponto)
+  ggplot2::geom_jitter(
+    height = 0.2, width = 0,
+    size = 1.8, alpha = 0.6,
+    show.legend = FALSE
+  ) +
+  ## linha com a duração média de toda a discografia
+  ggplot2::geom_vline(
+    xintercept = mean(as.numeric(fresno_musicas$duracao) / 60 / 1000, na.rm = TRUE),
+    color = "#FFFFFF60",
+    linetype = "dashed",
+    linewidth = 0.8
+  ) +
+  ggplot2::annotate("text", x = 3.95, y = 9.4, label = "Média: ~3m50s",
+                    color = "#FFFFFF80", size = 3, fontface = "italic", hjust = 0) +
+  ## escalas, rótulos e tema
+  ggplot2::scale_color_manual(values = cores_era) +
+  ggplot2::scale_fill_manual(values = cores_era) +
+  ggplot2::scale_x_continuous(limits = c(0, 8), breaks = seq(0, 8, 2), position = "top") +
+  ggplot2::labs(x = "Duração (min)\n", y = NULL) +
+  tema_fresno("x") +
+  ggplot2::theme(
+    axis.text.y = ggplot2::element_text(size = 9, face = "bold", color = "#FFFFFF", lineheight = 1.2),
+    axis.text.x.top = ggplot2::element_text(size = 9, color = "#FFFFFF"),
+    axis.title.x.top = ggplot2::element_text(size = 10, face = "bold"),
+    plot.margin = ggplot2::margin(t = 0, r = 5, b = 0, l = 0)
+  )
+```
+
+::::
+
+:::::
+
+---
+
+## Posicionamento emocional por eras
+
+<div class="subtle-howto" style="font-size: 0.5em; color: #94A3B8; margin-bottom: 12px; font-style: italic;">
+Como ler: cada ponto = uma música. X = energia, Y = valência. Losango = média da era.
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 8px;">
+
+<div class="insight-box" style="margin: 0; line-height: 1.4; padding: 8px 12px; border-left-color: #64748B; font-size: 20px !important;">
+  <strong style="color: #DA4220;">Origem (2003–06)</strong><br>
+  Músicas espalhadas — a banda ainda buscava seu som.
+</div>
+
+<div class="insight-box" style="margin: 0; line-height: 1.4; padding: 8px 12px; border-left-color: #B5A88A; font-size: 20px !important;">
+  <strong style="color: #B5A88A;">Consolidação (2008–12)</strong><br>
+  Fase mais "positiva": maior energia e valência da carreira.
+</div>
+
+<div class="insight-box" style="margin: 0; line-height: 1.4; padding: 8px 12px; border-left-color: #2296DB; font-size: 20px !important;">
+  <strong style="color: #2296DB;">Renovação &amp; Novo Auge</strong><br>
+  Valência cai, EMO cresce — sofrência com maturidade sonora.
+</div>
+
+</div>
+
+```{r out.width='100%', fig.height=4.0, fig.width=11}
+#| bg: transparent
+
+# definindo as cores ------------------------------------------------------
+
+## cor de cada era da carreira
+cores_era <- c(
+  "Origem (2003–06)" = "#DA4220",
+  "Consolidação (2008–12)" = "#B5A88A",
+  "Renovação (2014–17)" = "#2296DB",
+  "Novo Auge (2019–21)" = "#28AFFF"
+)
+
+# preparando os dados -----------------------------------------------------
+
+## calculando a média de energia e valência de cada era (centroides)
+centroides <- fresno_musicas |>
+  dplyr::group_by(era) |>
+  dplyr::summarise(cx = mean(energia), cy = mean(valencia), .groups = "drop")
+
+# construindo o gráfico ---------------------------------------------------
+
+fresno_musicas |>
+  ggplot2::ggplot(ggplot2::aes(x = energia, y = valencia)) +
+  ## nomeando os quatro quadrantes emocionais
+  ggplot2::annotate("text", x = 0.25, y = 0.97, label = "Tranquila & Feliz",
+                    color = "#FFFFFF50", size = 3.2, fontface = "italic") +
+  ggplot2::annotate("text", x = 0.75, y = 0.97, label = "Intensa & Feliz",
+                    color = "#FFFFFF50", size = 3.2, fontface = "italic") +
+  ggplot2::annotate("text", x = 0.25, y = 0.03, label = "Tranquila & Triste",
+                    color = "#FFFFFF50", size = 3.2, fontface = "italic") +
+  ggplot2::annotate("text", x = 0.775, y = 0.03, label = "Intensa & Triste  ←  EMO",
+                    color = "#00D2D270", size = 3.2, fontface = "bold.italic") +
+
+  ## linhas que dividem os quadrantes
+  ggplot2::geom_hline(yintercept = 0.5, color = "#FFFFFF15", linetype = "dashed", linewidth = 0.6) +
+  ggplot2::geom_vline(xintercept = 0.5, color = "#FFFFFF15", linetype = "dashed", linewidth = 0.6) +
+
+  ## pontos das músicas (tamanho = polaridade) e losangos das médias por era
+  ggplot2::geom_point(ggplot2::aes(color = era, size = polaridade), alpha = 0.65) +
+  ggplot2::geom_point(data = centroides, ggplot2::aes(x = cx, y = cy, color = era),
+                      size = 7, shape = 18, alpha = 1, show.legend = FALSE) +
+
+  ## rótulos das eras sobre os centroides
+  ggrepel::geom_label_repel(
+    data = centroides, ggplot2::aes(x = cx, y = cy, label = era, color = era),
+    fill = "#0F172A", size = 3.3, fontface = "bold",
+    label.size = 0.3, show.legend = FALSE, seed = 42,
+    min.segment.length = 0.2
+  ) +
+
+  ## escalas, rótulos e tema
+  ggplot2::scale_color_manual(values = cores_era, name = NULL) +
+  ggplot2::scale_size_continuous(range = c(1.5, 4.5), guide = "none") +
+  ggplot2::scale_x_continuous(limits = c(0, 1), labels = scales::percent_format(accuracy = 1),
+                              expand = ggplot2::expansion(mult = c(0.01, 0.01))) +
+  ggplot2::scale_y_continuous(limits = c(0, 1), labels = scales::percent_format(accuracy = 1),
+                              expand = ggplot2::expansion(mult = c(0.01, 0.01))) +
+
+  ggplot2::labs(x = "Energia →", y = "Valência →") +
+  tema_fresno("both") +
+  ggplot2::theme(
+    legend.position = "none",
+    axis.title = ggplot2::element_text(size = 11, face = "bold"),
+    axis.text = ggplot2::element_text(size = 10),
+    plot.margin = ggplot2::margin(2, 8, 2, 8)
+  )
+```
+
+---
+
+## Música pra emo sofrer e dançar
+
+<style>
+#slide-danca p { font-size: 24px !important; }
+</style>
+
+::: {#slide-danca style="text-align: justify; margin-bottom: 20px;"}
+A Fresno também [revela sua fase mais dançante]{.hl} desde o início da carreira. O álbum mais recente traz 3 das músicas mais dançantes da história da banda — uma sofrência que agora arrasta o público para a pista.
+:::
+
+```{r out.width='100%', fig.height=4, fig.width=10}
+# preparando os dados -----------------------------------------------------
+
+## média geral de dançabilidade e anos de lançamento (eixo x)
+media_dance <- mean(fresno_musicas$dancabilidade)
+anos_dance <- as.character(sort(unique(lubridate::year(fresno_musicas$data_lancamento))))
+
+# construindo o gráfico ---------------------------------------------------
+
+fresno_musicas |>
+  dplyr::mutate(ano_label = as.character(lubridate::year(data_lancamento))) |>
+  ggplot2::ggplot(ggplot2::aes(x = ano_label, y = dancabilidade)) +
+  ## linha e rótulo da média geral
+  ggplot2::geom_hline(
+    yintercept = media_dance,
+    color = "#FFFFFF25",
+    linetype = "dashed",
+    linewidth = 0.8
+  ) +
+  ggplot2::geom_text(
+    data = data.frame(
+      ano_label = anos_dance[1],
+      y = media_dance + 0.04,
+      label = "Média geral"
+    ),
+    ggplot2::aes(x = ano_label, y = y, label = label),
+    inherit.aes = FALSE,
+    color = "#FFFFFF50", size = 3.2, hjust = -0.05
+  ) +
+  ## violino (distribuição), boxplot (IQR) e pontos (faixas individuais)
+  ggplot2::geom_violin(
+    fill = paste0(COR_DESTAQUE, "18"),
+    color = paste0(COR_DESTAQUE, "50"),
+    width = 0.75, trim = TRUE
+  ) +
+  ggplot2::geom_boxplot(
+    fill = COR_PANEL,
+    color = COR_DESTAQUE,
+    width = 0.18,
+    outlier.shape = NA,
+    linewidth = 0.6
+  ) +
+  ggplot2::geom_jitter(
+    color = paste0(COR_TEXTO, "90"),
+    width = 0.07, height = 0, size = 2, alpha = 0.7
+  ) +
+  ## escalas, rótulos e tema
+  ggplot2::scale_y_continuous(
+    limits = c(0, 1),
+    labels = scales::percent_format(accuracy = 1)
+  ) +
+  ggplot2::labs(
+    x = "\nÁlbum (ano de lançamento)",
+    y = "Dançabilidade\n",
+    subtitle = "Violino = distribuição · Caixa = IQR · Pontos = faixas individuais"
+  ) +
+  tema_fresno("y") +
+  ggplot2::theme(
+    plot.subtitle = ggplot2::element_text(size = 10, face = "plain", color = "#94A3B8")
+  )
+```
+
+---
+
+## Ritmo: fidelidade ao estilo
+
+::::: {.columns}
+
+:::: {.column width="55%"}
+```{r out.width='100%', fig.height=5.2, fig.width=6.0, dev='svg'}
+#| echo: false
+#| message: false
+#| warning: false
+
+# preparando os dados -----------------------------------------------------
+
+## calculando o BPM médio de cada álbum
+bpm_por_album <- fresno_musicas |>
+  dplyr::mutate(
+    album_label = paste0(album, " (", lubridate::year(data_lancamento), ")"),
+    album_label = forcats::fct_reorder(album_label, data_lancamento)
+  ) |>
+  dplyr::group_by(album_label) |>
+  dplyr::summarise(ritmo_medio = mean(ritmo, na.rm = TRUE), .groups = "drop")
+
+## média histórica de BPM entre os álbuns
+media_bpm_geral <- mean(bpm_por_album$ritmo_medio, na.rm = TRUE)
+
+# construindo o gráfico ---------------------------------------------------
+
+ggplot2::ggplot(bpm_por_album, ggplot2::aes(y = album_label, x = ritmo_medio)) +
+  ## linha da média histórica
+  ggplot2::geom_vline(
+    xintercept = media_bpm_geral,
+    color = "white", linetype = "dashed", alpha = 0.3, linewidth = 0.8
+  ) +
+  ## haste e ponto de cada álbum (tamanho proporcional ao BPM)
+  ggplot2::geom_segment(
+    ggplot2::aes(x = 100, xend = ritmo_medio, y = album_label, yend = album_label),
+    color = paste0(COR_DESTAQUE, "40"),
+    linewidth = 1.4
+  ) +
+  ggplot2::geom_point(ggplot2::aes(size = ritmo_medio), color = COR_DESTAQUE, alpha = 0.9) +
+  ggplot2::scale_size_continuous(range = c(3, 7), guide = "none") +
+  ## valor do BPM ao lado de cada ponto
+  ggplot2::geom_text(
+    ggplot2::aes(label = paste0(round(ritmo_medio, 0), " BPM")),
+    hjust = -0.3, color = COR_TEXTO, size = 3.6, fontface = "bold"
+  ) +
+  ## escalas, rótulos e tema
+  ggplot2::scale_x_continuous(
+    limits = c(100, 220),
+    breaks = seq(100, 200, 25),
+    labels = function(x) paste0(x, " BPM"),
+    position = "top"
+  ) +
+  ggplot2::scale_y_discrete() +
+  ggplot2::labs(
+    x = "Batidas por minuto (BPM)\n",
+    y = NULL
+  ) +
+  tema_fresno("x") +
+  ggplot2::theme(
+    axis.text.y = ggplot2::element_text(size = 10.5, face = "bold", color = "#FFFFFF"),
+    axis.text.x.top = ggplot2::element_text(size = 9, color = "#FFFFFF"),
+    axis.title.x.top = ggplot2::element_text(size = 10.5, face = "bold"),
+    plot.margin = ggplot2::margin(t = 10, r = 15, b = 0, l = 0)
+  )
+```
+::::
+
+:::: {.column width="45%"}
+<style>
+.reveal .col-BPM p { font-size: 24px !important; }
+</style>
+
+::: {.col-BPM style="padding-left: 15px; margin-top: 10px;"}
+
+A **manutenção do BPM médio** ao longo dos álbuns reforça a fidelidade da banda ao seu DNA sonoro. A linha tracejada marca a média histórica de **`r media_bpm` BPM**.
+
+A retomada no último disco, combinada ao aumento de dançabilidade, confirma: a Fresno aposta em [força e ritmo com coração emo]{.hl}.
+
+:::
+
+<div class="insight-box" style="margin-top: 20px;">
+**Leitura do gráfico:** quanto mais à direita o ponto, mais acelerado o álbum. O tamanho do ponto é proporcional ao BPM.
+</div>
+
+::::
+
+:::::
+
+---
+
+## O DNA Sonoro da Fresno
+
+<div class="subtle-howto" style="font-size: 0.5em; color: #94A3B8; margin-bottom: 12px; font-style: italic;">
+Como ler: cada célula representa a média do álbum naquela dimensão sonora. Mais intenso = valor mais alto.
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 8px;">
+
+<div class="insight-box" style="margin: 0; line-height: 1.4; padding: 8px 12px; border-left-color: #22D3EE; font-size: 20px !important;">
+<strong style="color: #22D3EE;">Energia &amp; Valência</strong><br>
+Caem progressivamente — a banda ficou mais introspectiva.
+</div>
+
+<div class="insight-box" style="margin: 0; line-height: 1.4; padding: 8px 12px; border-left-color: #00D2D2; font-size: 20px !important;">
+<strong style="color: #00D2D2;">Dançabilidade</strong><br>
+Cresce no Novo Auge — sofrência mais rítmica.
+</div>
+
+<div class="insight-box" style="margin: 0; line-height: 1.4; padding: 8px 12px; border-left-color: #64748B; font-size: 20px !important;">
+<strong style="color: #94A3B8;">Acústica &amp; Discurso</strong><br>
+Pouca oscilação: identidade elétrica permanece intacta.
+</div>
+
+</div>
+
+```{r out.width='100%', fig.height=4.5, fig.width=12}
+# preparando os dados -----------------------------------------------------
+
+## nomes das dimensões sonoras exibidas no eixo x
+icones <- c(
+  "Acústica" = "Acústica",
+  "Dançabilidade" = "Dançabilidade",
+  "Energia" = "Energia",
+  "Valência" = "Valência",
+  "Discurso" = "Discurso"
+)
+
+## calculando a média de cada dimensão por álbum e passando para o formato longo
+heatmap_data <- fresno_musicas |>
+  dplyr::mutate(
+    album_label = paste0(album, " (", lubridate::year(data_lancamento), ")")
+  ) |>
+  dplyr::group_by(album_label, data_lancamento) |>
+  dplyr::summarise(
+    Acústica = mean(acustica),
+    Dançabilidade = mean(dancabilidade),
+    Energia = mean(energia),
+    Valência = mean(valencia),
+    Discurso = mean(discurso),
+    .groups = "drop"
+  ) |>
+  dplyr::arrange(data_lancamento) |>
+  tidyr::pivot_longer(
+    cols = c(Acústica, Dançabilidade, Energia, Valência, Discurso),
+    names_to = "feature",
+    values_to = "valor"
+  ) |>
+  ## ordenando álbuns (do mais recente ao mais antigo) e dimensões
+  dplyr::mutate(
+    album_label = forcats::fct_rev(forcats::fct_reorder(album_label, data_lancamento)),
+    feature_label = dplyr::recode(feature, !!!icones),
+    feature_label = factor(feature_label, levels = icones)
+  )
+
+# construindo o gráfico ---------------------------------------------------
+
+ggplot2::ggplot(heatmap_data, ggplot2::aes(x = feature_label, y = album_label, fill = valor)) +
+  ## células do mapa de calor com o valor em percentual
+  ggplot2::geom_tile(color = "#0F172A", linewidth = 1.0) +
+  ggplot2::geom_text(
+    ggplot2::aes(
+      label = scales::percent(valor, accuracy = 1),
+      color = ifelse(valor > 0.50, "#FFFFFF", "#FFFFFF")
+    ),
+    size = 6, fontface = "bold", show.legend = FALSE
+  ) +
+  ## escalas de cor e eixos
+  ggplot2::scale_fill_gradient2(
+    low = "#0D1B2A",
+    mid = "#2F4F4F",
+    high = "#006666",
+    midpoint = 0.50,
+    limits = c(0, 1),
+    guide = "none"
+  ) +
+  ggplot2::scale_color_identity() +
+  ggplot2::scale_x_discrete(expand = c(0, 0)) +
+  ggplot2::scale_y_discrete(expand = c(0, 0)) +
+  ggplot2::labs(x = NULL, y = NULL) +
+  ## tema sem bordas e fundos
+  tema_fresno("none") +
+  ggplot2::theme(
+    panel.border = ggplot2::element_blank(),
+    panel.background = ggplot2::element_blank(),
+    plot.background = ggplot2::element_blank(),
+    axis.text.x = ggplot2::element_text(size = 14, face = "bold", color = "#FFFFFF", margin = ggplot2::margin(t = 6)),
+    axis.text.y = ggplot2::element_text(size = 13, color = COR_TEXTO, face = "bold", hjust = 1, lineheight = 1, margin = ggplot2::margin(r = 10)),
+    axis.ticks = ggplot2::element_blank(),
+    legend.position = "none",
+    plot.margin = ggplot2::margin(5, 10, 5, 5)
+  )
+```
+
+---
+
+## Mas o que o público pensa?
+
+<style>
+#slide-publico p { font-size: 24px !important; line-height: 1.5 !important; }
+</style>
+
+::: {#slide-publico style="text-align: justify; margin-bottom: 45px;"}
+Observando a **popularidade no Spotify**, fica evidente como a discografia da banda é positivamente regular. O top 10 atual reúne músicas desde os primeiros discos (2006) até a fase mais recente (2021). **O público confirma os vários auges em 25 anos**.
+:::
+
+```{r}
+# preparando os dados -----------------------------------------------------
+
+## classificando as músicas por era e pegando as 10 mais populares
+top_tracks_tbl <- fresno_toptracks |>
+  dplyr::mutate(
+    year = lubridate::year(lancamento),
+    era = dplyr::case_when(
+      year <= 2006 ~ "Origem",
+      year <= 2012 ~ "Consolidação",
+      year <= 2017 ~ "Renovação",
+      TRUE ~ "Novo Auge"
+    )
+  ) |>
+  dplyr::select(musica, popularidade, ano = year, era) |>
+  dplyr::arrange(dplyr::desc(popularidade)) |>
+  utils::head(10) |>
+  ## renomeando as colunas para exibição
+  dplyr::rename(
+    "Música" = musica,
+    "Popularidade" = popularidade,
+    "Ano" = ano,
+    "Era" = era
+  )
+
+# construindo a tabela ----------------------------------------------------
+
+## gerando a tabela html com a classe customizada
+kbl <- knitr::kable(
+  top_tracks_tbl,
+  align = "c",
+  format = "html",
+  table.attr = 'class="table-custom"'
+)
+
+## identificando as linhas da era Novo Auge para destacar
+novo_auge_rows <- which(top_tracks_tbl$Era == "Novo Auge")
+
+## aplicando o destaque nas linhas do Novo Auge
+kbl |>
+  kableExtra::row_spec(
+    novo_auge_rows,
+    extra_css = "background-color: rgba(0, 210, 210, 0.08); color: #00D2D2; font-weight: 700;"
+  )
+```
+
+---
+
+## Algumas conclusões
+
+<style>
+#slide-conclusoes p, 
+#slide-conclusoes li,
+#slide-conclusoes li div { 
+  font-size: 24px !important; 
+  line-height: 1.5 !important; 
+}
+
+#slide-conclusoes .styled-bullets li::before {
+  font-size: 28px !important;
+  margin-top: -2px; 
+}
+</style>
+
+:::: {#slide-conclusoes}
+<p style="text-align: justify; margin-bottom: 30px;">O que aconteceu com a Fresno está relacionado a uma aposta na fidelidade ao seu estilo, oxigenada por novas linguagens sonoras:</p>
+
+<ul class="styled-bullets">
+  <li class="fragment"><div>Apostou em estruturas de discos <strong>muito parecidas</strong>, garantindo mudanças sutis e a manutenção da marca Fresno ao longo de 20 anos;</div></li>
+  <li class="fragment"><div><strong>Diminuiu a intensidade média dos álbuns</strong>, movimento associado a um <span class="hl">reforço da sua marca emo</span>, retomando a origem da banda com maturidade;</div></li>
+  <li class="fragment"><div>Manteve o BPM padrão, mas <strong>apostou em uma versão mais dançável</strong>, acrescentando elementos rítmicos que acompanham o amadurecimento do público;</div></li>
+  <li class="fragment"><div>O <strong>DNA Sonoro</strong> revela uma queda consistente em Energia e Valência nos álbuns recentes, enquanto a Dançabilidade cresce. A sofrência agora <span class="hl">arrasta os pés</span>.</div></li>
+</ul>
+::::
+
+---
+
+```{=html}
+<div class="enc-final">
+  <div class="vinil-wrap">
+    <div class="vinil-disco">
+      <div class="vinil-label">
+        <svg viewBox="0 0 496 512" width="34" height="34" fill="#05070a">
+          <path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-72.5-47-170.8-59.9-246.7-34.4-4.8 1.6-9.4 2.3-13.6 2.3-13.6 0-21.4-10.7-21.4-22.7 0-11.3 7.1-17.4 15.2-20.1 87.4-28.8 198.5-13.9 281.8 41.1 5.8 3.9 10 9 10 18.1 0 12-10 20.3-23 20.3zm29.6-72.8c-6.8 0-11.3-3.2-15.8-6.1-84.5-56-218.4-71.1-309.4-35.3-5.5 2.3-11.6 3.2-17.1 3.2-16.5 0-27.8-12.6-27.8-28.1 0-12.9 6.8-21.4 17.1-25.5 106.1-42.1 257.6-24.3 358.3 42.4 6.8 4.5 11.6 11 11.6 20.7-.1 17.8-14.3 28.7-28.5 28.7z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="agulha"></div>
+  </div>
+  
+  <h2 class="enc-titulo">Mais emo, mais dançante e fiel à sua essência:<br>a Fresno se reinventou para continuar sendo cada vez mais Fresno.</h2>
+  
+  <div class="agradecimento">Obrigado pela leitura 🤘</div>
+</div>
+
+<style>
+.enc-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.vinil-wrap {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.vinil-disco {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, #14181d 0px, #14181d 3px, #232830 4px, #232830 7px);
+  box-shadow: 0 0 40px rgba(0, 210, 210, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: girarVinil 8s linear infinite;
+}
+
+/* O container do centro do disco agora usa flexbox para centralizar o SVG */
+.vinil-label {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #00D2D2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px #05070a, 0 0 0 5px #00D2D2;
+}
+
+@keyframes girarVinil {
+  to { transform: rotate(360deg); }
+}
+
+.agulha {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  width: 5px;
+  height: 70px;
+  background: linear-gradient(to bottom, #5a6170, #2b2f36);
+  border-radius: 3px;
+  transform-origin: top center;
+  transform: rotate(-28deg);
+  z-index: 2;
+}
+
+.agulha::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00D2D2;
+  box-shadow: 0 0 10px rgba(0, 210, 210, 0.6);
+}
+
+.enc-titulo {
+  font-size: 1.5em !important;
+  text-align: center;
+  border: none;
+  text-transform: none;
+  margin: 0;
+  max-width: 850px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+
+.agradecimento {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #00D2D2;
+  font-weight: 600;
+  font-family: 'Urbanist', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+</style>
+```
+___
+
+```{=html}
+<div class="ficha-tecnica">
+  <div class="ft-titulo">Ficha Técnica</div>
+  
+  <div class="ft-linha">
+    <span class="ft-label">Roteiro & Apresentação</span>
+    <span>Jean Carlo da Silva</span>
+  </div>
+  
+  <div class="ft-linha">
+    <span class="ft-label">Código</span>
+    <span>
+      <a href="https://github.com/ojeancarlo/" target="_blank" class="ft-link ft-link-clean">
+        <svg viewBox="0 0 496 512" width="16" height="16" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
+        github.com/ojeancarlo
+      </a>
+    </span>
+  </div>
+  
+  <div class="ft-linha">
+    <span class="ft-label">Produzido com</span>
+    <span class="tech-badges">
+      <span class="badge badge-r">R</span>
+      <span class="badge badge-quarto">Quarto</span>
+      <span class="badge badge-reveal">reveal.js</span>
+    </span>
+  </div>
+
+  <div class="ft-linha">
+    <span class="ft-label">Dados</span>
+    <span>Spotify</span>
+  </div>
+
+  <div class="ft-linha">
+    <span class="ft-label">Pacotes utilizados</span>
+    <span class="ft-pacotes">
+      {dplyr}, {tidyr}, {readr}, {ggplot2}, {forcats}, {lubridate},<br>
+      {ggrepel}, {scales}, {kableExtra}, {htmltools}, {knitr}
+    </span>
+  </div>
+  
+  <div class="ft-linha">
+    <span class="ft-label">Referências Sonoras</span>
+    <span>Fresno</span>
+  </div>
+  
+  <div class="ft-linha">
+    <span class="ft-label">Texto completo</span>
+    <span>
+      <a href="https://medium.com/@ojeancarlo" target="_blank" class="ft-link ft-link-clean">
+        <svg viewBox="0 0 640 512" width="16" height="16" fill="currentColor"><path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.367,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.4,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+        medium.com/@ojeancarlo
+      </a>
+    </span>
+  </div>
+</div>
+
+<style>
+.ficha-tecnica {
+  max-width: 620px;
+  margin: 15px auto 0;
+  background: #0d1117;
+  border: 1px solid #1f2630;
+  border-radius: 10px;
+  padding: 20px 25px;
+  font-family: 'Inter', sans-serif; 
+  color: #d8dee9;
+}
+
+.ft-titulo {
+  color: #00D2D2;
+  font-family: 'Urbanist', sans-serif; 
+  font-weight: 800;
+  font-size: 1.05em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #2b3340;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.ft-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+  font-size: 0.82em;
+}
+
+.ft-label {
+  color: #7d8590;
+  white-space: nowrap;
+}
+
+.ft-pacotes {
+  text-align: right;
+  color: #8b949e;
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+
+.ft-link-clean {
+  color: #d8dee9;
+  text-decoration: none;
+  border-bottom: 1px dotted #00D2D2;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ft-link-clean:hover {
+  color: #00D2D2;
+  border-bottom: 1px solid #00D2D2;
+}
+
+/* Garante que os ícones fiquem alinhados com o texto */
+.ft-link-clean svg {
+  vertical-align: text-bottom;
+}
+
+.tech-badges {
+  display: flex;
+  gap: 6px;
+}
+
+.badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 0.8em;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.badge-r { background: #276DC3; }
+.badge-quarto { background: #447099; }
+.badge-reveal { background: #E44D26; }
+</style>
+```
+
+---
+
+## Referências
+
+::: {style="font-size: 0.9em; margin-top: 40px;"}
+::: nonincremental
+1.  ["Analysis of Top Tracks in Spotify"](https://web.stanford.edu/~elenatuz/courses/stats32-aut2021/Spotify_analysis.html), 21/10/2021, por Elena Tuzhilina;
+2.  ["Agora dá para brincar com o algoritmo de recomendação do Spotify e fazer playlists"](https://gizmodo.uol.com.br/spotify-playlist-recomendacao-algoritmo/), 06/02/2018, por Sidney Fussel;
+3.  ["Using Spotify data to find the happiest emo song"](https://medium.com/analytics-vidhya/using-spotify-data-to-find-the-happiest-emo-song-20e37fdf9eb), 17/01/2021, por Chris Williamson.
+:::
+:::
