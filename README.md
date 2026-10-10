@@ -13,7 +13,7 @@ A aplicação foi construída com um fluxo focado na **reprodutibilidade** e no 
 
 ## 🔗 Links
 
-- 🌐 **[Acesse a apresentação interativa no GitHub Pages](https://ojeancarlo.github.io/fresno-spotify-analysis/)**
+- 🌐 **[Acesse a apresentação interativa no GitHub Pages](https://ojeancarlo.github.io/aptFresnoR/)**
 - 📖 **[Leia o artigo completo sobre os bastidores analíticos no Medium](https://medium.com/@ojeancarlo/artigo-fresno)**
   <!-- TODO: substituir pelo link real do artigo -->
 
