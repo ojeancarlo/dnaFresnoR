@@ -13,7 +13,7 @@ A aplicação foi construída com um fluxo focado na **reprodutibilidade** e no 
 
 ## 🔗 Links
 
-- 🌐 **[Acesse a apresentação interativa no GitHub Pages](https://ojeancarlo.github.io/aptFresnoR/)**
+- 🌐 **[Acesse a apresentação interativa no GitHub Pages](https://ojeancarlo.github.io/dnaFresnoR/)**
 - 📖 **[Leia o artigo completo sobre os bastidores analíticos no Medium]()**
 
 
