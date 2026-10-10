@@ -14,8 +14,8 @@ A aplicação foi construída com um fluxo focado na **reprodutibilidade** e no 
 ## 🔗 Links
 
 - 🌐 **[Acesse a apresentação interativa no GitHub Pages](https://ojeancarlo.github.io/aptFresnoR/)**
-- 📖 **[Leia o artigo completo sobre os bastidores analíticos no Medium](https://medium.com/@ojeancarlo/artigo-fresno)**
-  <!-- TODO: substituir pelo link real do artigo -->
+- 📖 **[Leia o artigo completo sobre os bastidores analíticos no Medium]()**
+
 
 ---
 
@@ -95,7 +95,7 @@ Para quem deseja clonar e rodar o projeto hoje: o Spotify restringiu fortemente 
 **1. Clone este repositório:**
 
 ```bash
-git clone https://github.com/ojeancarlo/fresno-spotify-analysis.git
+git clone [https://github.com/ojeancarlo/dnaFresnoR]
 ```
 
 **2. Abra o arquivo do projeto (`.Rproj`) no RStudio.**
