@@ -14,7 +14,7 @@ A aplicação foi construída com um fluxo focado na **reprodutibilidade** e no 
 ## 🔗 Links
 
 - 🌐 **[Acesse a apresentação interativa no GitHub Pages](https://ojeancarlo.github.io/dnaFresnoR/)**
-- 📖 **[Leia o artigo completo sobre os bastidores analíticos no Medium]()**
+- 📖 **[Leia o artigo completo sobre os bastidores analíticos no Medium](https://medium.com/@ojeancarlo/a-sofr%C3%AAncia-agora-tem-groove-o-dna-sonoro-da-fresno-em-dados-3f302983a87e)**
 
 
 ---
